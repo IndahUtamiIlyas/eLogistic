@@ -1,0 +1,141 @@
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: #232426;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+}
+
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    margin-top: 5vh;
+  }
+  .navbar-collapse{
+    flex-grow: 0;
+  }
+  #sideNav .navbar-brand .img-profile {
+    min-width: 8rem;
+    min-height: 8rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+    padding-top: 0;
+  }
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+section.resume-section .resume-item{
+  min-width: none;
+}
+
+
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item {
+    min-width: 18rem;
+  }
+
+
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+.bg-primary {
+  background-color: #21485e !important;
+}
+
+.text-head {
+  color: #bfbf7e !important;
+}
+.text-primary {
+  color: #21485e !important;
+}
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+input{
+  margin-bottom: 5px;
+  width: 500px;
+}
+input[name='keterangan']{
+  margin-bottom: 5px;
+  width: 500px;
+  height: 100px;
+}
+[placeholder]{
+  padding: 5px;
+  font-size: 16px;
+}
+.logout a{
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #C0C0C2;
+}
+.logout a:hover{
+  color: #dbc592;
+  text-decoration: none;
+}
+.modal{
+  top: 30%;
+}

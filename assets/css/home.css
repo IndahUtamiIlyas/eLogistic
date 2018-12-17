@@ -1,0 +1,151 @@
+body {
+  font-family: 'Open Sans', serif;
+  color: #232426;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+.jumbotron{
+  height: 100vh;
+  border-radius: 0; 
+  text-align: left;
+  padding-bottom: 0;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #eee;
+}
+#jumbotron{
+  top: 20%;
+  z-index: 2;
+}
+hr{
+  height: 2px;
+  background-color: #f1c40f;
+  -webkit-animation: color 5s ease-in  0s infinite alternate running;
+  -moz-animation: color 5s linear  0s infinite alternate running;
+  animation: color 5s linear  0s infinite alternate running;
+}
+#logincontrol{
+  border-style: none;
+  background-color: #f1c40f;
+  -webkit-animation: color 5s ease-in  0s infinite alternate running;
+  -moz-animation: color 5s linear  0s infinite alternate running;
+  animation: color 5s linear  0s infinite alternate running;
+}
+@-webkit-keyframes color {
+    0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+@-moz-keyframes color {
+     0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+@keyframes color {
+  0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+.icon {
+  color: #e00;
+}
+.my-auto{
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 5vh;
+}
+#start #brand{
+  max-width: 8vh;
+  max-height: 8vh;
+}
+.navbar-brand{
+}
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+section.resume-section .resume-item{
+  min-width: none;
+}
+
+
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item {
+    min-width: 18rem;
+  }
+
+
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+.text-head {
+  color: #FBCF00 !important;
+}
+.text-primary {
+  color: #21485e !important;
+}
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+input{
+  margin-bottom: 2vh;
+  width: 100%;
+}
+input[name='keterangan'],input[name='pesan']{
+  width: 100%;
+  height: 30vh;
+}
+[placeholder]{
+  padding: 5px;
+  font-size: 16px;
+}
+#lokasi {
+  background-color: #eee;
+}
+.jumbotron .branding {
+  max-height: 15vh;
+}
+#kontak{
+  color: #eee;
+  background-image: url(../img/aa.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#kontak h3{
+  color: #eee;
+}
+#kontak button{
+  width: 30%;
+}
+#kontaks{
+  height: 40vh;
+  border-bottom: solid 2px #ee0;
+}
