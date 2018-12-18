@@ -50,6 +50,27 @@
   </nav>
   <!-- ======================================================================================================================-->
  
+  
+  <!-- Membuat menu welcome ==========================================================================================-->
+  <div class="container-fluid p-0">
+    <section class="resume-section">
+      <div class="my-auto">
+        <h3 class="mb-0">
+          <?php $name = $this->session->userdata('username'); ?>
+          <span class="text-primary">SELAMAT DATANG 
+            <span class="text-login"><?php echo "$name"?></span></span>
+        </h3>
+        <hr>
+        <p class="mb-3">Kelola akun Petugas milik anda !</p>
+        <p class="mb-3">Pilihan menu ada di  sebelah bilik kiri website Anda</p>
+
+        <hr>
+
+      </div>
+    </section>
+    <hr class="m-0">
+  <!-- ======================================================================================================================-->
+
   <!-- Membuat menu publikasi kebutuhan ==========================================================================================-->
   <div class="container-fluid p-0">
     <section class="resume-section" id="kebutuhan">

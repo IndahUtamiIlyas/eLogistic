@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 17 Des 2018 pada 15.12
+-- Waktu pembuatan: 18 Des 2018 pada 00.13
 -- Versi server: 10.1.36-MariaDB
 -- Versi PHP: 5.6.38
 
@@ -131,7 +131,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `username`, `email`, `password`, `level`) VALUES
 (1, 'admin bpbd', 'admin123', 'adminBpbd123@gmail.com', 'admin123', 'Bpbd'),
-(2, 'admin petugas', 'petugas001', 'petugas.eLogistik@gmail.com', 'petugas001', 'Petugas');
+(2, 'admin petugas', 'petugas001', 'petugas.eLogistik@gmail.com', 'petugas001', 'Petugas'),
+(3, 'Indah Utami Ilyas', 'indah2206', 'indahilyas@gmail.com', 'indahilyas22', 'Petugas');
 
 --
 -- Indexes for dumped tables
@@ -175,7 +176,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `kebutuhan`
 --
 ALTER TABLE `kebutuhan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `lokasi`
@@ -199,7 +200,7 @@ ALTER TABLE `prosedur`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -45,6 +45,9 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#prosedur">Tata Cara</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#daftar">Daftar Akun baru</a>
+        </li>
       </ul>
     </div>
     <br><br><br><br>
@@ -52,13 +55,19 @@
   </nav>
   <!-- ======================================================================================================================-->
   
-  <!-- Membuat menu publikasi BPBD ==========================================================================================-->
+  <!-- Membuat menu welcome ==========================================================================================-->
   <div class="container-fluid p-0">
-    <section class="resume-section" id="kebutuhan">
+    <section class="resume-section">
       <div class="my-auto">
         <h3 class="mb-0">
-          <span class="text-primary">SELAMAT DATANG</span>
+          <?php $name = $this->session->userdata('username'); ?>
+          <span class="text-primary">SELAMAT DATANG 
+            <span class="text-login"><?php echo "$name"?></span></span>
         </h3>
+        <hr>
+        <p class="mb-3">Kelola akun Bpbd milik anda !</p>
+        <p class="mb-3">Pilihan menu ada di  sebelah bilik kiri website Anda</p>
+
         <hr>
 
       </div>
@@ -258,6 +267,35 @@
     </section>
   </div>
   <!-- ======================================================================================================================-->
+
+<!-- Membuat menu tata cara pengiriman BPBD ===========================================================================================-->
+    <section class="resume-section" id="daftar">
+      <div class="my-auto">
+        <h3 class="mb-0"><span class="text-primary">DAFTARKAN AKUN BARU</span></h3>
+        <hr> 
+        <p class="mb-3">Isikan data valid, dan pilih pengguna sebagai Bpbd atau petugas</p>
+
+         <form action="<?php echo site_url('Bpbd/register') ?>" method="POST">
+            <table>
+              <tr><td colspan="2"><input class="form-control" type="text" name="nama" placeholder="Nama Panjang"></td></tr>
+              <tr><td colspan="2"><input class="form-control" type="text" name="username" placeholder="Username"></td></tr>
+              <tr><td colspan="2"><input class="form-control" type="text" name="email" placeholder="Email"></td></tr>
+              <tr><td><input class="form-control" type="text" name="password" placeholder="Password"></td>
+              <td><input class="form-control" type="text" name="retype" placeholder="Retype Password"></td></tr>
+              <tr><td><select name="level" class="custom-select">
+                <option selected>Pilih level...</option>
+                <option value="Bpbd">Bpbd</option>
+                <option value="Petugas">Petugas</option>
+              </select><br><br></td></tr>
+              <tr><td><button class="btn btn-primary" type="submit" name="addPengiriman">Daftarkan</button></td></tr> 
+            </table>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- ======================================================================================================================-->
+
+
 
   <script src="<?php echo base_url(); ?>/assets/vendor/jquery/jquery.min.js"></script>
   <script src="<?php echo base_url(); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

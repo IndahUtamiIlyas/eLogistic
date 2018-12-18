@@ -77,4 +77,18 @@ class Bpbd extends CI_Controller {
 		}
 	}
 
+	//untuk fungsi di menu register =================================================================================
+	public function register(){
+		$nama = $_POST['nama'];
+		$username = $_POST['username'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$level = $_POST['level'];
+		$data = array('name' => $nama, 'username' => $username, 'email'=> $email, 'password'=> $password, 'level'=> $level);
+		$tambah = $this->RegisterModel->addUser('user',$data);
+		if ($tambah > 0) {
+			redirect('Bpbd/index#daftar');
+		} 
+	}
+
 }

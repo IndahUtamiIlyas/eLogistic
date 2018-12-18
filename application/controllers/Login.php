@@ -7,10 +7,6 @@ class Login extends CI_Controller {
 		$this->load->view('login/Login');
 	}
 
-	function register(){
-		$this->load->view('login/Register');
-	}
-
 	function forgot_password(){
 		$this->load->view('login/ForgotPass');
 	}

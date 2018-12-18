@@ -106,6 +106,9 @@ section.resume-section .resume-item{
 .text-primary {
   color: #21485e !important;
 }
+.text-login {
+  color: #f47742 !important;
+}
 a {
   color: #BD5D38;
 }

@@ -41,10 +41,9 @@
 					<input class="form-control col-md-10 offset-md-1" type="text" name="username" placeholder="Username" required autocomplete="off">
 					<input class="form-control col-md-10 offset-md-1" type="password" name="password" placeholder="Password" required autocomplete="off">
 					<input class="form-control col-md-10 offset-md-1" type="submit" name="login" value="LOGIN">
-					<!-- <button type="submit" class="btn btn-success btn-block col-md-10 offset-md-1">Login</button> -->
 					<div class="offset-md-1 question-login" >
-					<a href="<?php echo site_url('Login/forgot_password') ?>">Forgot Password</a><br>
-					<span >Create a new account<a href="<?php echo site_url('Login/register') ?>"> in here </a></span>
+					<span>Hanya Petugas dan BPBD yang dapat SIGN IN.
+					<br><br>Informasi eLogistic silahkan menuju <a href="<?php echo site_url('Home/index#info') ?>"> Laman utama </a></span>
 					</div>
 				<?php echo form_close(); ?>
 			</div>
