@@ -46,7 +46,10 @@
           <a class="nav-link js-scroll-trigger" href="#prosedur">Tata Cara</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#daftar">Daftar Akun baru</a>
+          <a class="nav-link js-scroll-trigger" href="#daftar">Daftar Akun Baru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#feedback">Feedback</a>
         </li>
       </ul>
     </div>
@@ -90,7 +93,6 @@
         <table class="table table-bordered">
           <thead style="text-align: center;">
             <tr>
-              <th scope="col">no</th>
               <th scope="col">Lokasi</th>
               <th scope="col">Kebutuhan</th>
               <th scope="col">QTY</th>
@@ -105,7 +107,6 @@
             foreach($kebutuhan as $k){ ?>
             
             <tr>
-              <td style="text-align: center;"width="50px" scope="row"><?php echo $no++ ?></td>
               <td><?php echo $k['lokasi'] ?></td>
               <td><?php echo $k['kebutuhan'] ?></td>
               <td><?php echo $k['qty'] ?></td>
@@ -145,7 +146,6 @@
         <table class="table table-bordered" >
           <thead style="text-align: center;">
             <tr>
-              <th scope="col">id</th>
               <th scope="col">Jenis</th>
               <th scope="col">Alamat</th>
               <th scope="col">Kabupaten/Kota</th>
@@ -161,7 +161,6 @@
             foreach($lokasi as $l){ ?>
             
             <tr>
-              <td style="text-align: center;" width="50px" scope="row"><?php echo $no++ ?></td>
               <td><?php echo $l['jenis'] ?></td>
               <td><?php echo $l['alamat'] ?></td>
               <td><?php echo $l['kabupaten'] ?></td>
@@ -296,6 +295,44 @@
   <!-- ======================================================================================================================-->
 
 
+<!-- Membuat menu feedback ==========================================================================================-->
+  <div class="container-fluid p-0">
+    <section class="resume-section" id="feedback">
+      <div class="my-auto">
+        <h3 class="mb-0">
+          <span class="text-primary">FEEDBACK PENGGUNA</span>
+        </h3>
+        <hr>
+
+        <p class="mb-3">Berikut adalah data feedback dari pengguna eLogistic</p>
+        <div class="col-md-12">  
+        <table class="table table-bordered">
+          <thead style="text-align: center;">
+            <tr>
+              <th scope="col">Nama</th>
+              <th scope="col">Email</th>
+              <th colspan="2" scope="col">Pesan</th>
+              </tr>
+          </thead>
+          
+          <tbody>
+            <?php 
+            $no = 1;
+            foreach($feedback as $f){ ?>
+            
+            <tr>
+              <td><?php echo $f['nama'] ?></td>
+              <td><?php echo $f['email'] ?></td>
+              <td><?php echo $f['pesan'] ?></td>
+              </tr>
+            <?php } ?>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0">
+  <!-- ======================================================================================================================-->
 
   <script src="<?php echo base_url(); ?>/assets/vendor/jquery/jquery.min.js"></script>
   <script src="<?php echo base_url(); ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
