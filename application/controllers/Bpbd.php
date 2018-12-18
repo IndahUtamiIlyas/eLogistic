@@ -8,6 +8,7 @@ class Bpbd extends CI_Controller {
 		$this->data['kebutuhan'] = $this->KebutuhanModel->getKebutuhan('kebutuhan');
 		$this->data['lokasi'] = $this->LokasiModel->getLokasi('lokasi');
 		$this->data['hasilnya'] = $this->ProsedurModel->getProsedur('prosedur');
+		$this->data['feedback'] = $this->FeedbackModel->getFeedback('feedback');
 		$this->load->view('Bpbd', $this->data);
 
 	}
