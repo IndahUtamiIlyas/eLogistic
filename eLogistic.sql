@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 18 Des 2018 pada 00.13
+-- Waktu pembuatan: 18 Des 2018 pada 10.13
 -- Versi server: 10.1.36-MariaDB
 -- Versi PHP: 5.6.38
 
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `eLogistic`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `pesan` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `nama`, `email`, `pesan`) VALUES
+(3, 'indah', 'indahilyas@gmail.com', 'Web sangat dinamis');
 
 -- --------------------------------------------------------
 
@@ -139,6 +159,12 @@ INSERT INTO `user` (`id`, `name`, `username`, `email`, `password`, `level`) VALU
 --
 
 --
+-- Indeks untuk tabel `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `kebutuhan`
 --
 ALTER TABLE `kebutuhan`
@@ -171,6 +197,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `kebutuhan`
