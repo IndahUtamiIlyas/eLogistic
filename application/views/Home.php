@@ -186,11 +186,11 @@
           <div class="row">
           <div class="col-md-4 p-0" id="">
             <p>Kirimkan feedback atau report Anda</p>
-            <form action="" id="">
+            <form action="<?php echo site_url('Home/feedback') ?>" method="POST">
               <input class="form-control" type="text" name="nama" placeholder="Nama" required="">
               <input class="form-control" type="text" name="email" placeholder="Email" required="">
               <input class="form-control" type="text" name="pesan" placeholder="Pesan" required="">
-              <button type="button" class="btn btn-info ">KIRIM</button>
+              <button type="submit" class="btn btn-info ">KIRIM</button>
             </form>
           </div>
 
