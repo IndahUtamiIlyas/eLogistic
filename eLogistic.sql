@@ -132,7 +132,7 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `name`, `username`, `email`, `password`, `level`) VALUES
 (1, 'admin bpbd', 'admin123', 'adminBpbd123@gmail.com', 'admin123', 'Bpbd'),
 (2, 'admin petugas', 'petugas001', 'petugas.eLogistik@gmail.com', 'petugas001', 'Petugas'),
-(3, 'Indah Utami Ilyas', 'indah2206', 'indahilyas@gmail.com', 'indahilyas22', 'Petugas');
+(3, 'Indah Utami Ilyas', 'indah', 'indahilyas@gmail.com', 'indahuser', 'Petugas');
 
 --
 -- Indexes for dumped tables
